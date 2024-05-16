@@ -19,6 +19,10 @@ var modal_9 = document.getElementById("modal-9");
 var btn_9 = document.getElementById("btn-9");
 var modal_10 = document.getElementById("modal-10");
 var btn_10 = document.getElementById("btn-10");
+var modal_11 = document.getElementById("modal-11");
+var btn_11 = document.getElementById("btn-11");
+var modal_12 = document.getElementById("modal-12");
+var btn_12 = document.getElementById("btn-12");
 var modal_req = document.getElementById("modal-req");
 var btn_req = document.getElementById("btn-req");
 var modal_sel = document.getElementById("modal-sel");
@@ -56,6 +60,12 @@ btn_9.addEventListener("click", function() {
 });
 btn_10.addEventListener("click", function() {
   modal_10.style.display = "block";
+});
+btn_11.addEventListener("click", function() {
+  modal_11.style.display = "block";
+});
+btn_12.addEventListener("click", function() {
+  modal_12.style.display = "block";
 });
 btn_req.addEventListener("click", function() {
   modal_req.style.display = "block";
@@ -99,6 +109,12 @@ window.addEventListener("click", function(event) {
   if (event.target == modal_10) {
     modal_10.style.display = "none";
   }
+  if (event.target == modal_11) {
+    modal_11.style.display = "none";
+  }
+  if (event.target == modal_12) {
+    modal_12.style.display = "none";
+  }
   if (event.target == modal_req) {
     modal_req.style.display = "none";
   }
@@ -109,3 +125,27 @@ window.addEventListener("click", function(event) {
     modal_cup.style.display = "none";
   }
 });
+
+
+
+document.getElementById("btn-rq").addEventListener("click", function() {
+  var url = "files/req.pdf"
+  window.open(url, '_blank');
+});
+
+document.getElementById("btn-malla").addEventListener("click", function() {
+  var url = "files/Malla_Curricular.pdf"
+  window.open(url, '_blank');
+});
+
+document.getElementById("btn-bro").addEventListener("click", function() {
+  var url = "files/Brochure.pdf"
+  window.open(url, '_blank');
+});
+
+//redes sociales
+document.getElementById("facebook").addEventListener("click", function() {
+  var url = "https://www.facebook.com/UniversidadTecnicadeAmbatoOficial/"
+  window.open(url, '_blank');
+});
+
