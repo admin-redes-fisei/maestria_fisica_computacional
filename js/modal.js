@@ -125,3 +125,27 @@ window.addEventListener("click", function(event) {
     modal_cup.style.display = "none";
   }
 });
+
+
+
+document.getElementById("btn-rq").addEventListener("click", function() {
+  var url = "files/req.pdf"
+  window.open(url, '_blank');
+});
+
+document.getElementById("btn-malla").addEventListener("click", function() {
+  var url = "files/Malla_Curricular.pdf"
+  window.open(url, '_blank');
+});
+
+document.getElementById("btn-bro").addEventListener("click", function() {
+  var url = "files/Brochure.pdf"
+  window.open(url, '_blank');
+});
+
+//redes sociales
+document.getElementById("facebook").addEventListener("click", function() {
+  var url = "https://www.facebook.com/UniversidadTecnicadeAmbatoOficial/"
+  window.open(url, '_blank');
+});
+

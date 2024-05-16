@@ -115,6 +115,7 @@
 				$window.on( "scroll", $.proxy( initCount, counter ) );
 			}
 		}
+		
 
 		// Progress bar
 		if ( plugins.progressLinear.length ) {
